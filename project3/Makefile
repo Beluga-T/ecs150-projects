@@ -3,7 +3,8 @@ all: gunrock_web
 CC = g++
 # CFLAGS = -g -Werror -Wall -I include -I shared/include -I/usr/local/opt/openssl@1.1/include -I/opt/homebrew/Cellar/openssl@3/3.2.1/include
 # LDFLAGS = -L /opt/homebrew/Cellar/openssl@3/3.2.1/lib -lssl -lcrypto -pthread
-# for my mac locally
+
+# for my mac locally-- homebrew on mac only has openssl@3/3.3.2 
 CFLAGS = -g -Werror -Wall -I include -I shared/include -I/usr/local/opt/openssl@1.1/include -I/opt/homebrew/Cellar/openssl@3/3.3.2/include
 LDFLAGS = -L /opt/homebrew/Cellar/openssl@3/3.3.2/lib -lssl -lcrypto -pthread
 VPATH = shared
