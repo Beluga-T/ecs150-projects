@@ -1,2 +1,3 @@
 *.o
-*.obj
+*.d
+gunrock_web
