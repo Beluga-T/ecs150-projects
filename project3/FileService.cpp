@@ -40,7 +40,7 @@ bool FileService::endswith(string str, string suffix)
 void FileService::get(HTTPRequest *request, HTTPResponse *response)
 {
   string path = this->m_basedir + request->getPath();
-  // Check for ".." in the path to prevent directory traversal attacks
+  // For Security :: Check for ".." in the path to prevent directory traversal attacks
   if (path.find("..") != string::npos)
   {
     response->setStatus(403); // Forbidden status
